@@ -1,3 +1,6 @@
+// Bowler.cs
+// Bowler model class that represents a bowler in the bowling league
+
 namespace BowlingAPI.Models
 {
     public class Bowler

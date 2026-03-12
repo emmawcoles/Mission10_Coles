@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BowlingAPI.Models;
 
+// BowlersController.cs
+// BowlersController class that handles HTTP requests related to bowlers, including
 namespace BowlingAPI.Controllers
 {
     [ApiController]
@@ -10,11 +12,14 @@ namespace BowlingAPI.Controllers
     {
         private BowlingLeagueContext _context;
 
+        // Constructor that takes a BowlingLeagueContext and assigns it to the _context field
         public BowlersController(BowlingLeagueContext temp)
         {
             _context = temp;
         }
 
+        // GET method that retrieves a list of bowlers who are on the Marlins or Sharks teams,
+        // including their team name and other details, and returns it as an IEnumerable of anonymous objects
         [HttpGet(Name = "GetBowlers")]
         public IEnumerable<object> Get()
         {
@@ -37,6 +42,7 @@ namespace BowlingAPI.Controllers
                 })
                 .ToList();
 
+            // Return the list of bowlers as an IEnumerable of anonymous objects
             return bowlerList;
         }
     }
