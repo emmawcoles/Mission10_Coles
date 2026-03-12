@@ -1,0 +1,78 @@
+/* App Styles */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eef1f5;
+  color: #222;
+}
+
+.app-container {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 40px 50px;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.heading-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.heading-container h1 {
+  margin-bottom: 14px;
+  color: #1f4aa0;
+  font-size: 2.3rem;
+}
+
+.heading-container p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.table-container {
+  margin-top: 30px;
+  overflow-x: auto;
+}
+
+.bowler-table {
+  margin: 0 auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 850px;
+  background-color: white;
+}
+
+.bowler-table th,
+.bowler-table td {
+  padding: 14px 18px;
+  text-align: left;
+  border: 1px solid #d9dee8;
+}
+
+.bowler-table th {
+  background-color: #1f4aa0;
+  color: white;
+  font-weight: bold;
+}
+
+.bowler-table tr:nth-child(even) td {
+  background-color: #f7f9fc;
+}
+
+.bowler-table tr:hover td {
+  background-color: #eef4ff;
+}
+
+.team-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #dce8ff;
+  color: #1f4aa0;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
